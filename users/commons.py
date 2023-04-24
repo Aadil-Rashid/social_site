@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 
 def valid_email(email):
     """
-    Validate the given email address
+        Validates the given email address
     """
     try:
         validate_email(email)
