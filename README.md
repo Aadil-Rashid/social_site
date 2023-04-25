@@ -49,7 +49,8 @@ Once you have the access token, you can start using the system. To view all user
 
 ```
 http://127.0.0.1:8000/api/users/?limit=3&offset=0&search=far
-where limit and offset are used for pagination, and search is used to search for users by name/or/email.
+where limit and offset are used for pagination, and 
+search is used to search for users by name/or/email.
 ```
 
 To view the friend list of the logged in user, send a GET request to the following endpoint:
@@ -66,9 +67,12 @@ http://127.0.0.1:8000/api/pending/list/
 
 To send a friend request to another user, send a POST request to the following endpoint:
 
+##### here user can't send more than 3 friend requests in a min
+
 ```
 http://127.0.0.1:8000/api/send/request/<int:user_id>/
-where user_id is the ID of the user to whome the friend request is being sent. Use the access token of the some other user for this request.
+where user_id is the ID of the user to whome the friend request is being sent. 
+Use the access token of the some other user for this request.
 ```
 
 To accept a friend request, send a PUT request to the following endpoint:
