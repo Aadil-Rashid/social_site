@@ -66,7 +66,7 @@ class FriendshipManager(Manager):
         message = ''
         obj = self.filter(sender_id=sender_id, receiver_id=receiver_id).exclude(Q(status=REJECTED)).first()
         if not obj:
-            return None
+            return None, {'Friendship instance not found'}
         if obj.status == ACCEPTED:
             message = 'Friend Request Already Accepted'
         else:

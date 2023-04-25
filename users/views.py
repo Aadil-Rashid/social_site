@@ -128,12 +128,7 @@ class SendRequestAPIView(APIView):
             message = "Sender id can't be equal to Receiver id"
             status_code = status.HTTP_400_BAD_REQUEST
         else:
-            # try:
-            message, status_code = Friendship.objects.create_request(user_id, receiver_id)
-            # except:
-            #     message = "user not found"
-            #     status_code = status.HTTP_400_BAD_REQUEST
-                    
+            message, status_code = Friendship.objects.create_request(user_id, receiver_id)     
         return Response(message, status=status_code)
 
 

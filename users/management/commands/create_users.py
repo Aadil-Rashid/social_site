@@ -4,7 +4,7 @@ from users.models import CustomUser
 
  
 class Command(BaseCommand):
-    names_list = ['aadil', 'farhan', 'nasir', 'owais', 'aqib', 'tanveer']
+    names_list = ['aadil', 'farhan', 'berlin', 'helsinki', 'aqib', 'jules', 'stark', 'osman', 'dundar']
     def handle(self, *args, **options):
         for name in self.names_list:
             email = name+'@gmail.com'
