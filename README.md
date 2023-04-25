@@ -12,11 +12,8 @@ Next, register a user by sending a POST request to the following endpoint:
 
 ```
 http://127.0.0.1:8000/api/register/
-```
 
 with the following JSON data in the request body:
-
-```
 {
     "email": "user@google.com",
     "password": "test",
