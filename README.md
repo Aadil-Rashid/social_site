@@ -87,4 +87,4 @@ where friend_id is the ID of the friend who sent the request.
 ```
 
 ### Conclusion
-This project provides a basic implementation of social networking APIs that allows users to register, login, and send friend requests to each other. Please feel free to use and modify this project as per your needs.
+This project provides a basic implementation of social networking APIs that allows users to register, login, and send friend requests to each other. Please feel free to use.
